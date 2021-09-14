@@ -7,6 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from pathlib import Path
 import sys
 
 
@@ -44,6 +45,11 @@ def get_args():
 
     if args.output == None:
         args.output = f"{args.room}.md"
+
+    web_driver_executable = Path(args.driver)
+    if not web_driver_executable.is_file():
+        print("[!] incorrect path to web driver executable")
+        sys.exit(1)
 
     return args
 
