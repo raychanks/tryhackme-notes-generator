@@ -48,7 +48,7 @@ def get_args():
 
     web_driver_executable = Path(args.driver)
     if not web_driver_executable.is_file():
-        print("[!] incorrect path to web driver executable")
+        print("[!] Incorrect path to web driver executable")
         sys.exit(1)
 
     return args
@@ -126,7 +126,7 @@ class NoteGenerator:
         for idx, task in enumerate(data):
             title = task["title"]
             task_num = idx + 1
-            markdown += f"# Task {task_num} - {title}\n\n"
+            markdown += f"## Task {task_num} - {title}\n\n"
 
             for question in task["sub_tasks"]:
                 markdown += f"> {question}\n\n"
@@ -145,6 +145,8 @@ def main():
 
     note_generator = NoteGenerator(args)
     note_generator.write_markdown(content)
+
+    print(f"[+] Notes generated successfully: {args.output}")
 
 
 if __name__ == "__main__":

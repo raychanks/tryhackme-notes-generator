@@ -8,9 +8,19 @@
 
 2. Visit [here to download](https://chromedriver.chromium.org/downloads) the corresponding driver for the Chrome browser
 
-3. Extract the executable, and might need to mark the downloaded driver as executable by running `chmod +x /path/to/driver`
+3. Extract the executable, you might need to make the downloaded driver as executable by running
+
+```bash
+chmod +x /path/to/driver
+```
 
 4. Run the code with
+
+```bash
+python3 gen-notes.py -r name_of_the_room -d /path/to/driver --headless
+```
+
+For example:
 
 ```bash
 python3 gen-notes.py -r linuxfundamentalspart1 -d ./chromedriver.exe --headless
@@ -34,7 +44,7 @@ python3 gen-notes.py -r linuxfundamentalspart1 -d ./chromedriver.exe --headless
 
     ---
 
-    # Task 1 - Introduction
+    ## Task 1 - Introduction
 
     > Let's get started!
 
@@ -42,7 +52,7 @@ python3 gen-notes.py -r linuxfundamentalspart1 -d ./chromedriver.exe --headless
 
     ```
 
-    # Task 2 - A Bit of Background on Linux
+    ## Task 2 - A Bit of Background on Linux
 
     > Research: What year was the first release of a Linux operating system?
 
@@ -50,7 +60,7 @@ python3 gen-notes.py -r linuxfundamentalspart1 -d ./chromedriver.exe --headless
 
     ```
 
-    # Task 3 - Interacting With Your First Linux Machine (In-Browser)
+    ## Task 3 - Interacting With Your First Linux Machine (In-Browser)
 
     > I've deployed my first Linux machine!
 
@@ -58,7 +68,7 @@ python3 gen-notes.py -r linuxfundamentalspart1 -d ./chromedriver.exe --headless
 
     ```
 
-    # Task 4 - Running Your First few Commands
+    ## Task 4 - Running Your First few Commands
 
     > If we wanted to output the text "TryHackMe", what would our command be?
 
@@ -72,7 +82,7 @@ python3 gen-notes.py -r linuxfundamentalspart1 -d ./chromedriver.exe --headless
 
     ```
 
-    # Task 5 - Interacting With the Filesystem!
+    ## Task 5 - Interacting With the Filesystem!
 
     > On the Linux machine that you deploy, how many folders are there?
 
@@ -98,7 +108,7 @@ python3 gen-notes.py -r linuxfundamentalspart1 -d ./chromedriver.exe --headless
 
     ```
 
-    # Task 6 - Searching for Files
+    ## Task 6 - Searching for Files
 
     > Use grep on "access.log" to find the flag that has a prefix of "THM". What is the flag?
 
@@ -112,7 +122,7 @@ python3 gen-notes.py -r linuxfundamentalspart1 -d ./chromedriver.exe --headless
 
     ```
 
-    # Task 7 - An Introduction to Shell Operators
+    ## Task 7 - An Introduction to Shell Operators
 
     > If we wanted to run a command in the background, what operator would we want to use?
 
@@ -138,7 +148,7 @@ python3 gen-notes.py -r linuxfundamentalspart1 -d ./chromedriver.exe --headless
 
     ```
 
-    # Task 8 - Conclusions & Summaries
+    ## Task 8 - Conclusions & Summaries
 
     > I'll have a play around!
 
@@ -146,7 +156,7 @@ python3 gen-notes.py -r linuxfundamentalspart1 -d ./chromedriver.exe --headless
 
     ```
 
-    # Task 9 - Linux Fundamentals Part 2
+    ## Task 9 - Linux Fundamentals Part 2
 
     > Terminate the machine deployed in this room from task 3.
 
